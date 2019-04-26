@@ -147,7 +147,7 @@ def plot_bias(res, vSRL, is_dev):
     plt.plot(res['training_ratio'], res['bef_ratio'], 'r.')
     plt.plot(res['training_ratio'], res['training_ratio'], 'b-')
     if vSRL == 1:
-        inter_words = ['washing','shopping', 'driving', 'coaching']
+        inter_words = ['washing','drinking', 'throwing', 'talking']
         for word in inter_words:
             plt.plot(res[res['verb'] == word]['training_ratio'].values[0], res[res['verb'] == word]['bef_ratio'].values[0], 'k*')
             plt.annotate(word , 
